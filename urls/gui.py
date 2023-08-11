@@ -10,9 +10,10 @@ urlpatterns = [
     path("default", gui.Index.as_view(), name="default"),
     path("home", gui.Index.as_view(), name="home"),
 
-    path("annual_progress/", report.StoreMgrAnnualProgressView.as_view(), name="annual_progress"),
-    path("annual_stats/", report.StoreMgrAnnualStatView.as_view(), name="annual_stats"),
-    path("annual_trends/", report.StoreMgrAnnualTrendView.as_view(), name="annual_trends"),
+    path("dashboard/", report.{{ app_name|title }}AnnualProgressView.as_view(), name="dashboard"),
+    path("annual_progress/", report.{{ app_name|title }}AnnualProgressView.as_view(), name="annual_progress"),
+    path("annual_stats/", report.{{ app_name|title }}AnnualStatView.as_view(), name="annual_stats"),
+    path("annual_trends/", report.{{ app_name|title }}rAnnualTrendView.as_view(), name="annual_trends"),
 
 ]
     
