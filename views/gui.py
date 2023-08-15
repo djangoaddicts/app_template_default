@@ -35,7 +35,7 @@ class Index(HandyHelperIndexView):
     protected_group_name = "admin"
 
 
-# class ListBrands(HandyHelperListPlusCreateAndFilterView):
+# class ListMyModels(HandyHelperListPlusCreateAndFilterView):
 #     """list available MyModel entries"""
 #     queryset = MyModel.objects.all()
 #     title = "MyModel"
